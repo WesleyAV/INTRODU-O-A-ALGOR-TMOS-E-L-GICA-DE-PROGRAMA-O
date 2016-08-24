@@ -20,18 +20,24 @@ public class Exer4 {
         //entrada de dados
         System.out.println("Informe o primeiro número positivo");
         a = scan.nextInt();
-        
+
         System.out.println("Informe o segundo número positivo");
         b = scan.nextInt();
 
         System.out.println("Informe o terceiro número positivo");
         c = scan.nextInt();
-
+        //condição para receber apenas números positivos
+        if (a <= 0 || b <= 0 || c <= 0) {
+            System.out.println("Digite apenas números positivos!");
+        } else {
         //processamento de dados
         r = (a + b) ^ 2;
         s = (b + c) ^ 2;
         d = (r + s) / 2;
+        
         //saída de dados
-        System.out.println("O resultado é: " + d);
+            System.out.println("O resultado é: " + d);
+        }
+
     }
 }
