@@ -22,37 +22,47 @@ public class Exer8 {
         System.out.println("Qual área você quer calcular? (q - Quadrado; r - Retângulo, t - Triangulo, p - Trapézio");
         opcao = scan.next(".").charAt(0);
 
-        if (opcao == 'p') {
-            System.out.println("Informe a medida da base maior: ");
-            bmaior = scan.nextInt();
-
-            System.out.println("Informe a medida da base menor (em cm): ");
-            bmenor = scan.nextDouble();
-
-            System.out.println("Informe a medida do lado/altura (em cm): ");
-            altura = scan.nextDouble();
-        } else {
-            System.out.println("Informe a medida da base (em cm): ");
-            base = scan.nextDouble();
-
-            System.out.println("Informe a medida do lado/altura (em cm): ");
-            lado = scan.nextDouble();
-        }
-
         switch (opcao) {
             case 'q':
+                System.out.println("Informe a medida da base (em cm): ");
+                base = scan.nextDouble();
+
+                System.out.println("Informe a medida do lado (em cm): ");
+                lado = scan.nextDouble();
+
                 area = base * lado;
                 System.out.println("A figura escolhida foi Quadrado, e a área é de: " + area + " cm²");
                 break;
             case 'r':
+                System.out.println("Informe a medida da base (em cm): ");
+                base = scan.nextDouble();
+
+                System.out.println("Informe a medida do lado (em cm): ");
+                lado = scan.nextDouble();
+
                 area = base * lado;
                 System.out.println("A figura escolhida foi Retangulo, e a área é de: " + area + " cm²");
                 break;
             case 't':
+                System.out.println("Informe a medida da base (em cm): ");
+                base = scan.nextDouble();
+
+                System.out.println("Informe a medida do lado (em cm): ");
+                lado = scan.nextDouble();
+
                 area = (base * lado) / 2;
                 System.out.println("A figura escolhida foi Triangulo, e a área é de: " + area + " cm²");
                 break;
             case 'p':
+                System.out.println("Informe a medida da base maior: ");
+                bmaior = scan.nextInt();
+
+                System.out.println("Informe a medida da base menor (em cm): ");
+                bmenor = scan.nextDouble();
+
+                System.out.println("Informe a medida do lado/altura (em cm): ");
+                altura = scan.nextDouble();
+
                 area = ((bmaior + bmenor) * altura) / 2;
                 System.out.println("A figura escolhida foi Trapézio, e a área é de: " + area + " cm²");
                 break;
