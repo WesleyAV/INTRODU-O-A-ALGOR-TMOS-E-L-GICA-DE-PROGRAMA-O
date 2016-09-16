@@ -24,9 +24,6 @@ public class Exer5 {
         int salarioatual, codcargo, funcionario, salarionovo;
         double diferenca, aumento;
 
-        double x = 123.123;
-        System.out.printf("%.2f", x);
-
         System.out.println("Informe o código do funcionário: ");
         funcionario = scan.nextInt();
 
@@ -40,40 +37,39 @@ public class Exer5 {
             case 101:
                 salarionovo = salarioatual + ((salarioatual * 12) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = 12.00;
-
+                aumento = 12;
                 break;
             case 102:
                 salarionovo = salarioatual + ((salarioatual * 26) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = ((salarioatual * 26) / 100);
+                aumento = 26;
                 break;
             case 103:
                 salarionovo = salarioatual + ((salarioatual * 32) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = ((salarioatual * 32) / 100);
+                aumento = 32;
                 break;
             case 104:
                 salarionovo = salarioatual + ((salarioatual * 37) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = ((salarioatual * 37) / 100);
+                aumento = 37;
                 break;
             case 105:
                 salarionovo = salarioatual + ((salarioatual * 41) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = ((salarioatual * 41) / 100);
+                aumento = 41;
                 break;
             default:
                 salarionovo = salarioatual + ((salarioatual * 52) / 100);
                 diferenca = salarionovo - salarioatual;
-                aumento = ((salarioatual * 52) / 100);
+                aumento = 52;
                 break;
         }
         System.out.println("Funcionário de número: " + funcionario);
         System.out.println("Salário antigo: R$ " + salarioatual);
         System.out.println("Salário novo: R$ " + salarionovo);
         System.out.println("Diferença: R$ " + diferenca);
-        System.out.println("Aumento: " + aumento + " %");
-
+        //System.out.println("Aumento: " + "%.2f", aumento + " %");
+        System.out.println("Aumento: " + aumento + "0%");
     }
 }
