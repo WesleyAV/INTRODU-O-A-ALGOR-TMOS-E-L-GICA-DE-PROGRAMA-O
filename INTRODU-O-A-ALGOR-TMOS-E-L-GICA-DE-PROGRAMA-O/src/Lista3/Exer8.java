@@ -68,7 +68,6 @@ public class Exer8 {
                 break;
             default:
                 System.out.println("Figura geométrica não foi informada!");
-
         }
     }
 }
