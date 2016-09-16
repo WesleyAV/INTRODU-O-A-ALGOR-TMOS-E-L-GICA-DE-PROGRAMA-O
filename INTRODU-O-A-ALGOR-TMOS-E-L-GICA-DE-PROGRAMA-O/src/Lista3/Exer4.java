@@ -17,21 +17,21 @@ public class Exer4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int tpmedia, numaluno;
-        int media = 0, n1, n2, n3;
+        int numaluno, tpmedia;
+        double media = 0, n1, n2, n3;
 
         System.out.println("Digite o número do aluno: ");
         numaluno = scan.nextInt();
 
         System.out.println("Digite a primeira nota: ");
-        n1 = scan.nextInt();
+        n1 = scan.nextDouble();
         //n1 = scan.nextDouble();
 
         System.out.println("Digite a segunda nota: ");
-        n2 = scan.nextInt();
+        n2 = scan.nextDouble();
 
         System.out.println("Digite a terceira nota: ");
-        n3 = scan.nextInt();
+        n3 = scan.nextDouble();
 
         System.out.println("Qual tipo de média deseja saber?: Aritmética - 1; Ponderada - 2; Harmônica - 3; ");
         tpmedia = scan.nextInt();
@@ -56,7 +56,7 @@ public class Exer4 {
                 System.out.println("Opção Inválida! Informe novamente!");
                 break;
         }
-        
+
         System.out.println("Número do aluno: " + numaluno);
         System.out.println("Nota 1: " + n1);
         System.out.println("Nota 2: " + n2);
